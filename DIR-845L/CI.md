@@ -17,7 +17,7 @@
  
 **Vulnerability Type** : OS Command Injection  
 
-**Affected Version** : Firmware version <= v1.01KRb03  
+**Affected Version** : Firmware version ≤ v1.01KRb03  
 
 **Description** : Command Injection Vulnerability exists in **cgibin** binary in **DIR-845L** router firmware **version ≤ v1.01KRb03**. In **ssdpcgi_main** function, HTTP request header field parsing data obtaind by the program via **getenv(”HTTP_ST”)** is pass to **lxmldbc_system**. And in **lxmldbc_system**, data pass directly to **system** without any filtering. Since there is no proper filtering process, attacker can send malicious data and can execute arbitrary command.  
 
