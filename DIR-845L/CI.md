@@ -19,7 +19,7 @@
 
 **Affected Version** : Firmware version <= v1.01KRb03  
 
-**Description** : Command Injection Vulnerability exists in **cgibin** binary in **DIR-845L** router firmware **version ≤ v1.0.4**. In **ssdpcgi_main** function, HTTP request header field parsing data obtaind by the program via **getenv(”HTTP_ST”)** is pass to **lxmldbc_system**. And in **lxmldbc_system**, data pass directly to **system** without any filtering. Since there is no proper filtering process, attacker can send malicious data and can execute arbitrary command.  
+**Description** : Command Injection Vulnerability exists in **cgibin** binary in **DIR-845L** router firmware **version ≤ v1.01KRb03**. In **ssdpcgi_main** function, HTTP request header field parsing data obtaind by the program via **getenv(”HTTP_ST”)** is pass to **lxmldbc_system**. And in **lxmldbc_system**, data pass directly to **system** without any filtering. Since there is no proper filtering process, attacker can send malicious data and can execute arbitrary command.  
 
 ![Screenshot from 2024-03-11 13-48-48](https://github.com/20Yiju/DLink/assets/79932335/81fa83da-80d4-40e5-815d-ff6d9b753534)
 ![Screenshot from 2024-03-11 13-49-26](https://github.com/20Yiju/DLink/assets/79932335/73dfe558-e030-4fa4-aeba-c1df61ee808c)
