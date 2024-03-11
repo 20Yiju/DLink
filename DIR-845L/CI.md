@@ -1,6 +1,6 @@
 ## D-Link DIR-845L OS Command Injection Vulnerability
 
-**Credit** : 정이주 (wjddlwn2637@gmail.com)  
+**Credit** : 정이주 (wjddlwn2637@korea.ac.kr)  
 
 **Vendor** : D-Link  
 
